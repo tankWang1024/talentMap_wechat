@@ -1,0 +1,20 @@
+{
+    "pages": [
+        "pages/home/index/index",
+        "pages/index/index",
+        "pages/mine/index/index",
+        "pages/policy/index/index",
+        "pages/serve/index/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "航都人才之家",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "useExtendedLib": {
+        "weui": true
+    }
+}
