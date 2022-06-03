@@ -1,5 +1,19 @@
 <!--pages/home/index/index.wxml-->
-<view>
+<view class="container">
+  <swiper class="cover_swiper radiu-card" indicator-dots='true' display-multiple-items='1' current='{{ centerItem }}' bindchange='handleSwiperChange' previous-margin='0' next-margin='0' autoplay='true' circular='true' interval='4000'>
+    <block wx:for="{{coverList}}" wx:key="id">
+      <swiper-item>
+        <view class='imageBox' style='text-align:center'>
+          <view class='mask' wx:if='{{ index != centerItem }}'></view>
+          <image src="{{item.url}}" mode='aspectFit' />
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="radiu-card">
+    <l-search-bar placeholder="搜索" show-cancel="{{false}}" />
+  </view>
 
 
+  <mp-tabbar ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange" current="0"></mp-tabbar>
 </view>

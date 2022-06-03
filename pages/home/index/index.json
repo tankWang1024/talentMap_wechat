@@ -1,3 +1,6 @@
 {
-    "usingComponents": {}
+    "usingComponents": {
+        "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
+        "l-search-bar":"lin-ui/search-bar"
+    }
 }

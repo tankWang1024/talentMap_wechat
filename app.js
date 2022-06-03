@@ -14,6 +14,37 @@ App({
     })
   },
   globalData: {
-    userInfo: null
-  }
+    userInfo: null,
+    tabbarList:[
+        {
+            "text": "首页",
+            "pagePath": "../../home/index/index",
+            "iconPath": "../../../img/tabbar/home.png",
+            "selectedIconPath": "../../../img/tabbar/home-fill.png"
+        },
+        {
+            "text": "政策",
+            "pagePath": "../../policy/index/index",
+            "iconPath": "../../../img/tabbar/police.png",
+            "selectedIconPath": "../../../img/tabbar/police-fill.png"
+        },
+        {
+            "text": "服务",
+            "pagePath": "../../serve/index/index",
+            "iconPath": "../../../img/tabbar/serve.png",
+            "selectedIconPath": "../../../img/tabbar/serve-fill.png"
+        },
+        {
+            "text": "我的",
+            "pagePath": "../../mine/index/index",
+            "iconPath": "../../../img/tabbar/user.png",
+            "selectedIconPath": "../../../img/tabbar/user-fill.png"
+        }
+    ],
+  },
+  tabChange:function(e){
+    wx.redirectTo({
+      url: e.detail.item.pagePath,
+    })
+}
 })

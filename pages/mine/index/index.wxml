@@ -1,2 +1,8 @@
 <!--pages/mine/index/index.wxml-->
-<text>pages/mine/index/index.wxml</text>
+<view class="container">
+    <view wx:for="{{menu}}" wx:for-item="menuItem" wx:key="index">
+      <l-list  title="{{menuItem.title}}" image="{{menuItem.image}}" data-location="{{menuItem.location}}" bindtap="menuItemToDetail"/>
+    </view>
+
+</view>
+<mp-tabbar ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange" current="3"></mp-tabbar>

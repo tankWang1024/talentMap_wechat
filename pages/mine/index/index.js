@@ -1,18 +1,34 @@
 // pages/mine/index/index.js
+
+const MineMenuList = [
+  {title:"身份认定",image:"/img/mineMenuIcon/idCard.png",location:"/pages/home/index/index"},
+  {title:"申报进程",image:"/img/mineMenuIcon/processing.png",location:""},
+  {title:"期望岗位",image:"/img/mineMenuIcon/job.png",location:""},
+  {title:"简历管理",image:"/img/mineMenuIcon/myFile.png",location:""},
+  {title:"权限设置",image:"/img/mineMenuIcon/setting.png",location:""},
+]
+
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        list:getApp().globalData.tabbarList,
+        userInfo: {},
+        menu:MineMenuList
     },
-
+    tabChange(e) {
+        getApp().tabChange(e);
+    },    
+    menuItemToDetail(e){
+      console.log(e.currentTarget.dataset.location)
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        console.log(this.data.menu)
     },
 
     /**

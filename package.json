@@ -1,0 +1,22 @@
+{
+  "name": "wechat",
+  "version": "1.0.0",
+  "description": "通过 useExtendedLib 扩展库的方式引入 WeUI，不占用小程序的包体积。\r ```text\r 1. 在 app.json 中添加如下配置：\r \"useExtendedLib\": {\r     \"weui\": true\r },\r 2. 在页面的 JSON 文件中引入要使用的 WeUI 组件\r {\r   \"usingComponents\": {\r     \"mp-dialog\": \"weui-miniprogram/dialog/dialog\"\r   }\r }\r 3. 在页面中使用 weui\r <view class=\"container\">\r   <mp-dialog title=\"test\" show=\"{{true}}\" bindbuttontap=\"tapDialogButton\" buttons=\"{{[{text: '取消'}, {text: '确认'}]}}\">\r     <view>test content</view>\r   </mp-dialog>\r </view>\r ```\r WeUI官方文档与体验不符，写的太差，缺少示例，换组件库。\r ##### 自定义tabbar\r ```\r app.js globaldata定义 tabbarList， tabChange跳转\r 在tabbar页面 使用mp-tabbar组件，并引入globaldata中的tabbarlist和tabChange\r <mp-tabbar ext-class=\"foot-tabbar\" style=\"position:fixed;bottom:0;width:100%;left:0;right:0;\" list=\"{{list}}\" bindchange=\"tabChange\" current=\"1\"></mp-tabbar>\r ```\r ##### Lin UI组件库",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tankWang1024/talentMap_wechat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tankWang1024/talentMap_wechat/issues"
+  },
+  "homepage": "https://github.com/tankWang1024/talentMap_wechat#readme",
+  "dependencies": {
+    "lin-ui": "^0.9.10"
+  }
+}
