@@ -1,0 +1,11 @@
+<swiper indicator-dots='true' display-multiple-items='1' current='{{ swiperCenterItem }}' bindchange='handleSwiperChange' previous-margin='0' next-margin='0' autoplay='true' circular='true' interval='{{swiperConfig.interval}}'
+style='height:{{swiperConfig.height}}'>
+  <block wx:if="true" wx:for="{{swiperBannerList}}" wx:key="id">
+    <swiper-item>
+      <view style='text-align:center'>
+        <view class='mask' wx:if='{{ index != swiperCenterItem }}'></view>
+        <image src="{{item.url}}" mode='aspectFit' />
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

@@ -43,6 +43,7 @@ App({
     ],
   },
   tabChange:function(e){
+    // 放在这里，其他地方也能调用
     wx.redirectTo({
       url: e.detail.item.pagePath,
     })

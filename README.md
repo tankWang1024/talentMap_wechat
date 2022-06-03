@@ -1,4 +1,6 @@
-##### WeUI组件库 abort
+
+#### 开发组件库选择
+##### WeUI组件库
 通过 useExtendedLib 扩展库的方式引入 WeUI，不占用小程序的包体积。
 ```text
 1. 在 app.json 中添加如下配置：
@@ -18,13 +20,19 @@
   </mp-dialog>
 </view>
 ```
-WeUI官方文档写的太差，缺少示例，换组件库。
-##### 自定义tabbar
+###### 自定义tabbar
 ```
-app.js globaldata定义 tabbarList， tabChange跳转
+app.js globaldata定义tabbarList，写tabChange方法供其他页面调用
 在tabbar页面 使用mp-tabbar组件，并引入globaldata中的tabbarlist和tabChange
 <mp-tabbar ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange" current="1"></mp-tabbar>
 ```
+WeUI官方文档写的不如elementui那样像一个可以快速使用的组件库，缺少示例，换组件库。
+但因为通过 useExtendedLib 扩展库的方式引入不占用包体积，可以拿来写个自定义tabbar。
 ##### Lin UI组件库
+Lin UI官网都有示例，组件引入就是在.json中引入 "lin-ui/组件名"，适合快速开发。
 官网 https://doc.mini.talelin.com/start/
-组件按需引入：lin-ui/组件名
+
+##### 封装的组件
+###### swiper
+
+

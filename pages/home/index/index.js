@@ -1,4 +1,29 @@
 // pages/home/index/index.js
+const swiperBannerList = [{
+    id: 0,
+    url: "/img/tabbar/home-fill.png"
+  },
+  {
+    id: 1,
+    url: "/img/tabbar/home-fill.png"
+  },
+  {
+    id: 2,
+    url: "/img/tabbar/home-fill.png"
+  },
+  {
+    id: 3,
+    url: "/img/tabbar/home-fill.png"
+  },
+  {
+    id: 4,
+    url: "/img/tabbar/home-fill.png"
+  }
+]
+const swiperConfig = {
+  interval: '4000',
+  height: '400rpx'
+}
 Page({
 
   /**
@@ -6,37 +31,11 @@ Page({
    */
   data: {
     list: getApp().globalData.tabbarList,
-    centerItem: 0,
-    coverList: [{
-        id: 0,
-        url: "/img/tabbar/home-fill.png"
-      },
-      {
-        id: 1,
-        url: "/img/tabbar/home-fill.png"
-      },
-      {
-        id: 2,
-        url: "/img/tabbar/home-fill.png"
-      },
-      {
-        id: 3,
-        url: "/img/tabbar/home-fill.png"
-      },
-      {
-        id: 4,
-        url: "/img/tabbar/home-fill.png"
-      }
-    ],
+    swiperBannerList,
+    swiperConfig,
   },
   tabChange(e) {
     getApp().tabChange(e);
-  },
-  //轮播图滑动时改变居中项
-  handleSwiperChange(e) {
-    this.setData({
-      centerItem: e.detail.current,
-    })
   },
   /**
    * 生命周期函数--监听页面加载
