@@ -2,6 +2,7 @@
     "usingComponents": {
         "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
         "l-search-bar":"lin-ui/search-bar",
-        "tank-swiper":"/components/tank_swiper/tank_swiper"
+        "tank-swiper":"/components/tank_swiper/tank_swiper",
+        "tank-calendar":"/components/tank_calendar/tank_calendar"
     }
 }

@@ -4,7 +4,6 @@
   <view class="radiu-card">
     <l-search-bar placeholder="搜索" show-cancel="{{false}}" />
   </view>
-
-
+  <tank-calendar></tank-calendar>
   <mp-tabbar ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange" current="0"></mp-tabbar>
 </view>
