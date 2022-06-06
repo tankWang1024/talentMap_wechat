@@ -22,7 +22,12 @@ const swiperBannerList = [{
 ]
 const swiperConfig = {
   interval: '4000',
-  height: '400rpx'
+  height: '360rpx'
+}
+const newsType = {
+    0:"政策展示宣传",
+    1:"人才焦点资讯",
+    2:"人才服务公示"
 }
 Page({
 
@@ -33,6 +38,7 @@ Page({
     list: getApp().globalData.tabbarList,
     swiperBannerList,
     swiperConfig,
+    
   },
   tabChange(e) {
     getApp().tabChange(e);

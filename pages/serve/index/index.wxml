@@ -1,3 +1,6 @@
 <!--pages/serve/index/index.wxml-->
-<text>pages/serve/index/index.wxml</text>
-<mp-tabbar ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange" current="2"></mp-tabbar>
+<view class="container">
+    <image class="banner-top" src="/img/action.png"></image>
+    <tank-serveItem wx:for="{{serveList}}" wx:key="title" serve-data="{{item}}"></tank-serveItem>
+    <mp-tabbar ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange" current="2"></mp-tabbar>
+</view>

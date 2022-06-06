@@ -12,9 +12,14 @@
       <view class="week-item"  wx:for="{{week}}" wx:key="index">{{item}}</view>
     </view>
     <view class="day-row" wx:for="{{totalDay}}" wx:for-item="item" wx:for-index="index" wx:key="index">
-      <view wx:for="{{item}}" wx:for-item="subItem" wx:for-index="subIndex" wx:key="subIndex"
+      <view wx:for="{{item}}" wx:for-item="subItem" wx:for-index="subIndex" wx:key="subIndex" data-weekIndex="{{index}}" data-dayIndex = "{{subIndex}}" bindtap="toDayActionDetail"
       class="day-item {{subItem.today?'day-today':''}}{{subItem.otherMonth?'day-otherMonth':''}}" >
-        <text>{{subItem.day}}</text>
+        <view>{{subItem.day}}</view>
+        <!-- <text>{{subItem.day}}</text> -->
+
+        <view wx:if="{{subItem.actionCount>0}}" class="day-action day-action-have">{{subItem.actionCount}}</view>
+        <!-- <img class="day-action-img" wx:else src="../../img/mineMenuIcon/myFile.png" alt=""/> -->
+        <image wx:else  class="day-action-img" src="../../img/mineMenuIcon/myFile.png"></image>
       </view>
     </view>
   </view>

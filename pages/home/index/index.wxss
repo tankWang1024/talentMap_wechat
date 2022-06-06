@@ -1,6 +1,8 @@
 /* pages/home/index/index.wxss */
-.radiu-card{
-  background-color: #fff;
-  padding-bottom: 20rpx;
-  border-radius: 10rpx;
+.container{
+  height: 100%;
+  padding-bottom: 180rpx;
+}
+.search-bar-mine{
+    padding: 12rpx 0;
 }

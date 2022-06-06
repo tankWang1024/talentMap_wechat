@@ -1,9 +1,28 @@
 <!--pages/home/index/index.wxml-->
 <view class="container">
-  <tank-swiper class="radiu-card" swiperBannerList="{{swiperBannerList}}" swiperConfig="{{swiperConfig}}"></tank-swiper>
-  <view class="radiu-card">
-    <l-search-bar placeholder="搜索" show-cancel="{{false}}" />
-  </view>
-  <tank-calendar></tank-calendar>
-  <mp-tabbar ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange" current="0"></mp-tabbar>
+    <tank-swiper class="radiu-card" swiperBannerList="{{swiperBannerList}}" swiperConfig="{{swiperConfig}}"></tank-swiper>
+    <tank-title title="活 动"></tank-title>
+    <tank-calendar></tank-calendar>
+    <tank-title title="资 讯"></tank-title>
+    
+    <l-search-bar placeholder="搜索" l-container-class="search-bar-mine" show-cancel="{{false}}" />
+    <l-card type="cover" l-img-class="right-card" position="left" image="/img/action.png">
+        <view class="content">
+            成都双流区2022年“航都英才智培计划”正式开班
+            <l-tag plain="{{true}}">人才焦点资讯</l-tag>
+        </view>
+    </l-card>
+    <l-card type="cover" l-img-class="right-card" position="left" image="/img/action.png">
+        <view class="content">
+            成都双流区2022年“航都英才智培计划”正式开班
+            <l-tag plain="{{true}}">政策展示宣传</l-tag>
+        </view>
+    </l-card>
+    <l-card type="cover" l-img-class="right-card" position="left" image="/img/action.png">
+        <view class="content">
+            成都双流区2022年“航都英才智培计划”正式开班
+            <l-tag plain="{{true}}">人才服务公示</l-tag>
+        </view>
+    </l-card>
+    <mp-tabbar ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange" current="0"></mp-tabbar>
 </view>

@@ -1,4 +1,7 @@
 {
     "usingComponents": {
-        "mp-tabbar": "weui-miniprogram/tabbar/tabbar"}
+        "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
+        "l-card":"lin-ui/card",
+        "tank-serveItem":"/components/tank_serveItem/tank_serveItem"
+    }
 }

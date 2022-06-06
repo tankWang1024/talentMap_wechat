@@ -1,0 +1,11 @@
+<!--components/tank_serveItem/tank_serveItem.wxml-->
+<view class="serve-item" style="background: -webkit-linear-gradient(left, rgb(255, 255, 255), {{serveData.bgColor}});">
+        <image class="left-img" src="{{serveData.imgSrc}}"></image>
+    <view class="right-item">
+        <view class="right-title">
+            <view class="title-text">{{serveData.title}}</view>
+            <image class="right-img" src="/img/arrow-right.png"></image>
+        </view>
+        <view class="right-content" style="color:{{serveData.color}}">{{serveData.content}}</view>
+    </view>
+</view>

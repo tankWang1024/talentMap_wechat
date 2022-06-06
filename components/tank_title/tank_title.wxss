@@ -1,0 +1,26 @@
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36rpx;
+    font-weight: 600;
+    color: rgb(8, 101, 154);
+}
+
+.title-border {
+    flex: 3;
+    height: 12rpx;
+}
+.border-left{
+    background:-webkit-linear-gradient(left,rgb(251, 251, 251),rgb(231, 239, 241));
+}
+.border-right{
+    background:-webkit-linear-gradient(right,rgb(251, 251, 251),rgb(231, 239, 241));
+}
+.title-text {
+    flex: 3;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+}

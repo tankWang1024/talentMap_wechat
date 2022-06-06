@@ -1,6 +1,7 @@
 {
     "pages": [
         "pages/home/index/index",
+        "pages/home/calendarDetail/calendarDetail",
         "pages/index/index",
         "pages/mine/index/index",
         "pages/policy/index/index",

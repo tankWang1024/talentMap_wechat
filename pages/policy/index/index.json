@@ -2,6 +2,9 @@
   "usingComponents": {
       "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
       "l-segment":"lin-ui/segment",
-      "l-segment-item":"lin-ui/segment-item"
+      "l-segment-item":"lin-ui/segment-item",
+      "l-search-bar":"lin-ui/search-bar",
+      "l-card":"lin-ui/card",
+      "l-tag":"lin-ui/tag"
   }
 }

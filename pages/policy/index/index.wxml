@@ -1,9 +1,67 @@
 <!--pages/policy/index/index.wxml-->
 <view class="container">
-
-  <l-segment bind:linchange="changeTabs">
+    <l-search-bar placeholder="搜索" l-container-class="search-bar-mine" show-cancel="{{false}}" />
+    <l-segment bind:linchange="changeTabs">
         <l-segment-item tab="亲 商" key="one" />
         <l-segment-item tab="爱 才" key="two" />
-  </l-segment>   
+    </l-segment>
+    <view wx:if="{{tabKey == 'one'}}">
+        <view class="tag-line">
+            <l-tag wx:for="{{tabLine}}" plain="{{true}}">{{item.name}}</l-tag>
+        </view>
+        <l-card type="cover" l-img-class="right-card" position="left" image="/img/action.png">
+            <view class="content">
+                成都双流区2022年“航都英才智培计划”正式开班
+                <l-tag plain="{{true}}">产业政策</l-tag>
+            </view>
+        </l-card>
+        <l-card type="cover" l-img-class="right-card" position="left" image="/img/action.png">
+            <view class="content">
+                成都双流区2022年“航都英才智培计划”正式开班
+                <l-tag plain="{{true}}">专家解读</l-tag>
+            </view>
+        </l-card>
+        <l-card type="cover" l-img-class="right-card" position="left" image="/img/action.png">
+            <view class="content">
+                成都双流区2022年“航都英才智培计划”正式开班
+                <l-tag plain="{{true}}">图文解读</l-tag>
+            </view>
+        </l-card>
+        <l-card type="cover" l-img-class="right-card" position="left" image="/img/action.png">
+            <view class="content">
+                成都双流区2022年“航都英才智培计划”正式开班
+                <l-tag plain="{{true}}">答记者问</l-tag>
+            </view>
+        </l-card>
+    </view>
+    <view wx:else>
+        <view class="tag-line">
+            <l-tag wx:for="{{tabLine2}}" plain="{{true}}">{{item.name}}</l-tag>
+        </view>
+        <l-card type="cover" l-img-class="right-card" position="left" image="/img/action.png">
+            <view class="content">
+                成都双流区2022年“航都英才智培计划”正式开班
+                <l-tag plain="{{true}}">爱才政策</l-tag>
+            </view>
+        </l-card>
+        <l-card type="cover" l-img-class="right-card" position="left" image="/img/action.png">
+            <view class="content">
+                成都双流区2022年“航都英才智培计划”正式开班
+                <l-tag plain="{{true}}">专家解读</l-tag>
+            </view>
+        </l-card>
+        <l-card type="cover" l-img-class="right-card" position="left" image="/img/action.png">
+            <view class="content">
+                成都双流区2022年“航都英才智培计划”正式开班
+                <l-tag plain="{{true}}">图文解读</l-tag>
+            </view>
+        </l-card>
+        <l-card type="cover" l-img-class="right-card" position="left" image="/img/action.png">
+            <view class="content">
+                成都双流区2022年“航都英才智培计划”正式开班
+                <l-tag plain="{{true}}">答记者问</l-tag>
+            </view>
+        </l-card>
+    </view>
+    <mp-tabbar ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange" current="1"></mp-tabbar>
 </view>
-<mp-tabbar ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange" current="1"></mp-tabbar>

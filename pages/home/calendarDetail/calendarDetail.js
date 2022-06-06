@@ -1,46 +1,27 @@
-// pages/policy/index/index.js
+// pages/home/calendatDetail/calendarDetail.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        list: getApp().globalData.tabbarList,
-        tabKey: "one",
-        tabLine: [{
-            name: "产业政策",
-        },{
-            name: "专家解读",
-        },{
-            name: "图文解读",
-        },{
-            name: "答记者问",
-        }],
-        tabLine2: [{
-            name: "爱才政策",
-        },{
-            name: "专家解读",
-        },{
-            name: "图文解读",
-        },{
-            name: "答记者问",
-        }],
+        dateStr: "",
+        actionList:[{title:""}]
     },
-    tabChange(e) {
-        getApp().tabChange(e);
-    },
-    // 顶部tab切换
-    changeTabs(e) {
-        console.log(e.detail.activeKey);
-        this.setData({
-            tabKey: e.detail.activeKey
-        })
-    },
+
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        console.log(options.date);
+        this.setData({
+            dateStr: options.date
+        })
+        if(options.date !== "2022-6-12"){
+            this.setData({
+                actionList:[]
+            })
+        }
     },
 
     /**

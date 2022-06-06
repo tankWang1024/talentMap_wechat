@@ -3,6 +3,9 @@
         "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
         "l-search-bar":"lin-ui/search-bar",
         "tank-swiper":"/components/tank_swiper/tank_swiper",
-        "tank-calendar":"/components/tank_calendar/tank_calendar"
+        "tank-calendar":"/components/tank_calendar/tank_calendar",
+        "l-card":"lin-ui/card",
+        "tank-title":"/components/tank_title/tank_title",
+        "l-tag":"lin-ui/tag"
     }
 }

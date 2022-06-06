@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "l-card":"lin-ui/card"
+    }
+}
